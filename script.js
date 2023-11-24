@@ -50,11 +50,11 @@ for (let i = 0; i < teamList.length; i++) {
     listArticleEl.classList.add('card')
     containerEl.appendChild(listArticleEl);
 
-    listArticleEl.innerHTML = teamList.toString();
+    listArticleEl.innerHTML = teamList.toString(teamList.nome, teamList.ruolo, teamList.img);
     // listArticleEl.innerHTML = 
-    // // `
-    // // <p>${teamList[i]} </p>
-    // // `;
+    // `
+    // <p>${listEl.nome}, ${listEl.ruolo}, ${listEl.img} </p>
+    // `;
 
 }
 
