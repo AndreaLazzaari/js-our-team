@@ -50,13 +50,15 @@ for (let i = 0; i < teamList.length; i++) {
     listArticleEl.classList.add('card')
     containerEl.appendChild(listArticleEl);
 
-    const imgEl = document.createElement('img')
-    imgEl.src = listEl.img
-    listArticleEl.innerHTML = listEl.nome += listEl.ruolo += listEl.img
-    // listArticleEl.innerHTML = 
-    // `
-    // <p>${listEl.nome}, ${listEl.ruolo}, <img src="${listEl.img}" alt=""></p>
-    // `;
+    // const imgEl = document.createElement('img')
+    // imgEl.src = listEl.img
+    // let src = document.getElementsByClassName('container')
+    // // src.appendChild(imgEl)
+    // listArticleEl.innerHTML = listEl.nome += listEl.ruolo += imgEl
+    listArticleEl.innerHTML = 
+    `
+    <p>${listEl.nome}, ${listEl.ruolo}, <img src="${listEl.img}" alt=""></p>
+    `;
 
 }
 
