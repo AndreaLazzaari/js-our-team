@@ -4,13 +4,13 @@ const teamList = [
     {
         nome : 'Wayne Barnett',
         ruolo : 'Founder & Ceo',
-        img : './img/wayne-barnett-founder-ceo.jpg'
+        img : 'img/wayne-barnett-founder-ceo.jpg'
     },
 
     {
         nome : 'Angela Caroll',
         ruolo : 'Chief Editor',
-        img : './img/angela-caroll-chief-editor.jpg'
+        img : 'angela-caroll-chief-editor.jpg'
     },
 
     {
@@ -50,11 +50,13 @@ for (let i = 0; i < teamList.length; i++) {
     listArticleEl.classList.add('card')
     containerEl.appendChild(listArticleEl);
 
-    // listArticleEl.innerHTML = teamList.toString(teamList.nome, teamList.ruolo, teamList.img);
-    listArticleEl.innerHTML = 
-    `
-    <p>${listEl.nome}, ${listEl.ruolo}, ${listEl.img} </p>
-    `;
+    const imgEl = document.createElement('img')
+    imgEl.src = listEl.img
+    listArticleEl.innerHTML = listEl.nome += listEl.ruolo += listEl.img
+    // listArticleEl.innerHTML = 
+    // `
+    // <p>${listEl.nome}, ${listEl.ruolo}, <img src="${listEl.img}" alt=""></p>
+    // `;
 
 }
 
