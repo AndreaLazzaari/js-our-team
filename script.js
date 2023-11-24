@@ -49,11 +49,12 @@ for (let i = 0; i < teamList.length; i++) {
     const listArticleEl = document.createElement('article')
     listArticleEl.classList.add('card')
     containerEl.appendChild(listArticleEl);
-    
-    listArticleEl.innerHTML = 
-    `
-    <p>${teamList.id} </p>
-    `;
+
+    listArticleEl.innerHTML = teamList.toString();
+    // listArticleEl.innerHTML = 
+    // // `
+    // // <p>${teamList[i]} </p>
+    // // `;
 
 }
 
